@@ -19,7 +19,7 @@ def gradient_descent(domain, lr=0.03) :
         x = x - lr*df_by_dx(x)
         y = y - lr*df_by_dy(y)
 
-        p2 = (x,y) #next point
+        p2 = (x,y) #next point #simultaneous update
 
         #condition of do-while loop
         if distance(p1, p2) < pow(10, -6):
